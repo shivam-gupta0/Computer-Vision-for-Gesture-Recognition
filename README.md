@@ -4,9 +4,10 @@ This environment takes three actions 0,1, and 2.
 0 is moving left, 1 is no movement, and two is moving right.
 # Dataset
 The number of gestures to control the car will be three since there are three different actions in the Mountain-Car-v0 Gym environment.
-![12](https://user-images.githubusercontent.com/85798077/177854587-3cf15dc0-ee6c-40e4-bed9-31711f276502.jpg)
-![11](https://user-images.githubusercontent.com/85798077/177854922-25ebde1e-da77-4f46-bf1a-229f6f7dbe2e.jpg)
-![8](https://user-images.githubusercontent.com/85798077/177855154-71272dc3-c60c-4b71-aa35-d0f4de94780b.jpg)
+![3](https://user-images.githubusercontent.com/85798077/177858459-6ae88fd7-0d0d-484b-af4b-74da866a6c45.jpg)
+![2](https://user-images.githubusercontent.com/85798077/177858509-3df970f4-d911-4e33-9f52-4c53f4851146.jpg)
+![1](https://user-images.githubusercontent.com/85798077/177858549-a1c66ec5-3596-4d87-ba7c-752561c43a41.jpg)
+
 Pictures are taken from mobile phones and webcams to create a dataset. 
 So that number of images can be increased, and different quality and angles can be included in the dataset.
 # Training Model
