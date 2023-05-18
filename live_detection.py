@@ -4,7 +4,7 @@ from keras.models import load_model
 from PIL import Image
 
 
-model = load_model("E:\\motorAi\\model_vgg_1\\new_model_vgg.h5", compile=True)
+model = load_model("model_vgg.h5", compile=True)
 
 web_cam = cv2.VideoCapture(0)
 while web_cam.isOpened():
