@@ -5,7 +5,7 @@ from keras.models import load_model
 from tensorflow.keras.applications.vgg16 import preprocess_input
 from PIL import Image
 
-gesture_detection_model = load_model("E:\\motorAi\\model_vgg_1\\new_model_vgg.h5", compile=True)
+gesture_detection_model = load_model("model_vgg.h5", compile=True)
 
 
 def action_input(image):
