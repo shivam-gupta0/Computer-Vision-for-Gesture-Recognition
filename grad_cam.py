@@ -30,13 +30,13 @@ def make_gradcam_heatmap(img_array, model, last_conv_layer_name, pred_index=None
     return heatmap.numpy()
 
 
-model = load_model("E:\\motorAi\\model_vgg_1\\new_model_vgg.h5", compile=True)
+model = load_model("new_model_vgg.h5", compile=True)
 last_conv_layer_name = "block5_conv3"
 model.layers[-1].activation = None
 
-original_image = cv2.imread("E:\\motorAi\\testing\\12.jpg")
+original_image = cv2.imread("testing\\12.jpg")
 
-test_image_ = image.load_img("E:\\motorAi\\testing\\12.jpg", target_size=(224, 224, 3))
+test_image_ = image.load_img("testing\\12.jpg", target_size=(224, 224, 3))
 test_image = image.img_to_array(test_image_)
 test_image = np.expand_dims(test_image, axis=0)
 
