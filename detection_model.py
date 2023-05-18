@@ -13,10 +13,10 @@ new_model = tf.keras.applications.VGG16(input_shape=IMAGE_SIZE + [3], weights='i
 for layer in new_model.layers:
     layer.trainable = False
 
-train_path = 'E:\\motorAi\\dataset\\train'
-valid_path = 'E:\\motorAi\\dataset\\test'
+train_path = 'train'
+valid_path = 'test'
 
-Label = glob.glob('E:\\motorAi\\dataset\\train/*')
+Label = glob.glob('train/*')
 
 x = Flatten()(new_model.output)
 prediction = Dense(len(Label), activation='softmax')(x)
@@ -34,10 +34,10 @@ train_data = ImageDataGenerator(rescale=1. / 255, zoom_range=0.2, horizontal_fli
 
 test_data = ImageDataGenerator(rescale=1. / 255)
 
-training_set = train_data.flow_from_directory('E:\\motorAi\\dataset\\train', target_size=(224, 224), batch_size=32,
+training_set = train_data.flow_from_directory('train', target_size=(224, 224), batch_size=32,
                                               class_mode='categorical')
 
-test_set = test_data.flow_from_directory('E:\\motorAi\\dataset\\test', target_size=(224, 224), batch_size=32,
+test_set = test_data.flow_from_directory('test', target_size=(224, 224), batch_size=32,
                                          class_mode='categorical')
 
 # Reference
