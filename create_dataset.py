@@ -18,6 +18,6 @@ def create_dataset(path, total_images):
             web_cam.release()
 
 
-dataset_path = "E:\\motorAi\\dataset"
+dataset_path = "dataset"
 total_images = 30
 create_dataset(dataset_path, total_images)
